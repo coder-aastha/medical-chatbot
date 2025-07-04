@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediBot - Your AI Health Assistant</title>
+    
+    <!-- External CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Chat Header -->
+        <div class="chat-header">
+            <div class="bot-avatar">
+                <i class="fas fa-user-md"></i>
+                <div class="status-indicator"></div>
+            </div>
+            <div class="bot-info">
+                <h3>MediBot</h3>
+                <p>Your AI Health Assistant</p>
+            </div>
+        </div>
+
+        <!-- Messages Container -->
+        <div class="messages-container" id="messagesContainer">
+            <div class="welcome-message">
+                <i class="fas fa-stethoscope"></i>
+                <h3>Welcome to MediBot</h3>
+                <p>I'm here to help with your health questions. How can I assist you today?</p>
+                <div class="quick-actions">
+                    <div class="quick-action" data-message="What are the symptoms of flu?">Flu symptoms</div>
+                    <div class="quick-action" data-message="How to maintain good health?">Health tips</div>
+                    <div class="quick-action" data-message="When should I see a doctor?">Medical advice</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Input Container -->
+        <div class="input-container">
+            <form class="input-form" id="messageForm">
+                <div class="input-wrapper">
+                    <textarea 
+                        class="message-input" 
+                        id="messageInput" 
+                        placeholder="Ask me about your health concerns..."
+                        rows="1"
+                        required
+                    ></textarea>
+                </div>
+                <button type="submit" class="send-button" id="sendButton">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="static/js/script.js"></script>
+</body>
+</html>
